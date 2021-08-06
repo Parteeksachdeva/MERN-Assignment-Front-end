@@ -1,0 +1,20 @@
+.admin{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,400px);
+    grid-gap: 20px;
+}
+.admin__home{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.admin__home>a{
+    background-color: brown;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
