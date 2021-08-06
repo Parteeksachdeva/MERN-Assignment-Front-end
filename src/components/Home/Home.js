@@ -46,7 +46,10 @@ function Home() {
         }
         setError("")
         e.target.reset();
-        axios.post("/items",{message,email})
+        axios.post("/items",{message,email},
+        {headers:{
+            Authorization : `Bearer ${localStorage.getItem("token")}`
+        }})
         .then(r=>{
             setMessage("");
             axios.get("/items",
